@@ -1,0 +1,29 @@
+{
+  "name": "drive-platform",
+  "private": true,
+  "version": "6.5.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "media:sync:recipes": "node scripts/recipe-media.mjs sync",
+    "media:check:recipes": "node scripts/recipe-media.mjs check",
+    "media:import:recipe": "node scripts/recipe-media.mjs import",
+    "media:import:recipes": "node scripts/recipe-media.mjs import-dir",
+    "media:sync:exercises": "node scripts/exercise-media.mjs sync",
+    "media:check:exercises": "node scripts/exercise-media.mjs check",
+    "media:import:exercise": "node scripts/exercise-media.mjs import",
+    "media:import:exercises": "node scripts/exercise-media.mjs import-dir"
+  },
+  "dependencies": {
+    "@zxing/browser": "^0.1.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
+  }
+}
